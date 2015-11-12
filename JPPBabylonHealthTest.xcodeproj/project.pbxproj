@@ -22,6 +22,8 @@
 		41295EE51BF52C3D00374E3F /* User+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EE41BF52C3D00374E3F /* User+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		41295EE91BF52CE900374E3F /* BHCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EE81BF52CE900374E3F /* BHCoreDataManager.m */; settings = {ASSET_TAGS = (); }; };
 		41295EF51BF5326100374E3F /* NSManagedObjectContext+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EF41BF5326100374E3F /* NSManagedObjectContext+Additions.m */; settings = {ASSET_TAGS = (); }; };
+		41295EF81BF534D800374E3F /* User+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EF71BF534D800374E3F /* User+Actions.m */; settings = {ASSET_TAGS = (); }; };
+		41295EFC1BF5354500374E3F /* BHUserGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EFB1BF5354500374E3F /* BHUserGateway.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		41295EF21BF531EA00374E3F /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		41295EF31BF5326100374E3F /* NSManagedObjectContext+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Additions.h"; sourceTree = "<group>"; };
 		41295EF41BF5326100374E3F /* NSManagedObjectContext+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Additions.m"; sourceTree = "<group>"; };
+		41295EF61BF534D800374E3F /* User+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+Actions.h"; sourceTree = "<group>"; };
+		41295EF71BF534D800374E3F /* User+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+Actions.m"; sourceTree = "<group>"; };
+		41295EFA1BF5354500374E3F /* BHUserGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHUserGateway.h; sourceTree = "<group>"; };
+		41295EFB1BF5354500374E3F /* BHUserGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHUserGateway.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 				41295EC21BF522D700374E3F /* Core Data */,
 				41295ECC1BF524A700374E3F /* DataSources */,
 				41295EE11BF52C1400374E3F /* Categories */,
+				41295EF91BF5353000374E3F /* Model */,
 				41295EC71BF5240E00374E3F /* Views */,
 				41295EC11BF522C000374E3F /* Main Journey */,
 				41295EC31BF522DF00374E3F /* Resources */,
@@ -246,6 +253,8 @@
 			children = (
 				41295EE31BF52C3D00374E3F /* User+Additions.h */,
 				41295EE41BF52C3D00374E3F /* User+Additions.m */,
+				41295EF61BF534D800374E3F /* User+Actions.h */,
+				41295EF71BF534D800374E3F /* User+Actions.m */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -257,6 +266,15 @@
 				41295EF41BF5326100374E3F /* NSManagedObjectContext+Additions.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		41295EF91BF5353000374E3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41295EFA1BF5354500374E3F /* BHUserGateway.h */,
+				41295EFB1BF5354500374E3F /* BHUserGateway.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,8 +379,10 @@
 			files = (
 				41295EA71BF5224500374E3F /* JPPBabylonHealthTest.xcdatamodeld in Sources */,
 				41295EE51BF52C3D00374E3F /* User+Additions.m in Sources */,
+				41295EFC1BF5354500374E3F /* BHUserGateway.m in Sources */,
 				41295EE91BF52CE900374E3F /* BHCoreDataManager.m in Sources */,
 				41295EC61BF523FD00374E3F /* BHUsersListViewController.m in Sources */,
+				41295EF81BF534D800374E3F /* User+Actions.m in Sources */,
 				41295EDF1BF52A6300374E3F /* User.m in Sources */,
 				41295EF51BF5326100374E3F /* NSManagedObjectContext+Additions.m in Sources */,
 				41295ED61BF5267900374E3F /* BHTableViewDataSource.m in Sources */,
