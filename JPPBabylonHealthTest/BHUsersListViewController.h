@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BHUsersListViewController.h
 //  JPPBabylonHealthTest
 //
 //  Created by Jorge Pardo on 12/11/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BHUsersListViewController : UIViewController
 
 @end
-
