@@ -6,8 +6,6 @@
 //  Copyright © 2015 MagicDealers. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
 @interface BHTableViewDataSource : NSObject <UITableViewDataSource, NSFetchedResultsControllerDelegate>

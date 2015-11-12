@@ -1,0 +1,17 @@
+//
+//  JPPBabylonHealthTest-Prefix.pch
+//  JPPBabylonHealthTest
+//
+//  Created by Jorge Pardo on 12/11/15.
+//  Copyright © 2015 MagicDealers. All rights reserved.
+//
+
+#ifndef JPPBabylonHealthTest_Prefix_pch
+#define JPPBabylonHealthTest_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "Defines.h"
+
+#endif /* JPPBabylonHealthTest_Prefix_pch */
