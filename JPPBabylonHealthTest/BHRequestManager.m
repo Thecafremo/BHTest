@@ -15,7 +15,7 @@
 + (void)makeGETCallToURL:(NSString *)URL withParameters:(NSDictionary *)parametersDictionary responseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock {
     
     AFHTTPRequestOperationManager *requestOperationManager = [AFHTTPRequestOperationManager manager];
-    requestOperationManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    requestOperationManager.responseSerializer = [AFJSONResponseSerializer serializer];
     
     [requestOperationManager GET:URL parameters:parametersDictionary success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (responseCompletionBlock) responseCompletionBlock(nil, responseObject);

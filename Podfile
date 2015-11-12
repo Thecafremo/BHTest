@@ -1,8 +1,6 @@
 platform :ios, '8.0'
 
-target 'JPPBabylonHealthTestTests' do
+link_with ['JPPBabylonHealthTest', 'JPPBabylonHealthTestTests']
 
 pod 'AFNetworking', '~> 2.6'
-
-end
 

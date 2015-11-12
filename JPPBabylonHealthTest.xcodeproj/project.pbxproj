@@ -27,6 +27,9 @@
 		41295F001BF53C3C00374E3F /* BHRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EFF1BF53C3C00374E3F /* BHRequestManager.m */; settings = {ASSET_TAGS = (); }; };
 		41295F071BF53FC400374E3F /* BHManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F051BF53FC400374E3F /* BHManagedObject.m */; settings = {ASSET_TAGS = (); }; };
 		41295F0A1BF5407700374E3F /* NSManagedObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F091BF5407700374E3F /* NSManagedObject+Additions.m */; settings = {ASSET_TAGS = (); }; };
+		41295F0D1BF5419400374E3F /* User+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F0C1BF5419400374E3F /* User+Parsing.m */; settings = {ASSET_TAGS = (); }; };
+		AF1450596E3E0C532B161FEC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 510E50BEE650C828C53F1EAF /* libPods.a */; };
+		C561135C4BECE738BF6E4987 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 510E50BEE650C828C53F1EAF /* libPods.a */; };
 		CD901DFC4DC6E88D8F16384D /* libPods-JPPBabylonHealthTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40B933DFC55877146BEB5029 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		41295E961BF5224500374E3F /* JPPBabylonHealthTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPPBabylonHealthTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41295E9A1BF5224500374E3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41295E9C1BF5224500374E3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +86,10 @@
 		41295F051BF53FC400374E3F /* BHManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHManagedObject.m; sourceTree = "<group>"; };
 		41295F081BF5407700374E3F /* NSManagedObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Additions.h"; sourceTree = "<group>"; };
 		41295F091BF5407700374E3F /* NSManagedObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Additions.m"; sourceTree = "<group>"; };
+		41295F0B1BF5419400374E3F /* User+Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+Parsing.h"; sourceTree = "<group>"; };
+		41295F0C1BF5419400374E3F /* User+Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+Parsing.m"; sourceTree = "<group>"; };
+		510E50BEE650C828C53F1EAF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96735B57E7710DB3BAE810A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPPBabylonHealthTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D745B0C9BBF27A4E809CE3D9 /* Pods-JPPBabylonHealthTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPPBabylonHealthTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		DFFBF7A82D1B2F59367B311F /* Pods-JPPBabylonHealthTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPPBabylonHealthTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C561135C4BECE738BF6E4987 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD901DFC4DC6E88D8F16384D /* libPods-JPPBabylonHealthTestTests.a in Frameworks */,
+				AF1450596E3E0C532B161FEC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,12 +141,11 @@
 			children = (
 				41295E9C1BF5224500374E3F /* AppDelegate.h */,
 				41295E9D1BF5224500374E3F /* AppDelegate.m */,
-				41295EFD1BF53C2D00374E3F /* Managers */,
 				41295EC21BF522D700374E3F /* Core Data */,
-				41295ECC1BF524A700374E3F /* DataSources */,
 				41295EE11BF52C1400374E3F /* Categories */,
 				41295EF91BF5353000374E3F /* Model */,
 				41295EC71BF5240E00374E3F /* Views */,
+				41295F0E1BF549C200374E3F /* Controllers */,
 				41295EC11BF522C000374E3F /* Main Journey */,
 				41295EC31BF522DF00374E3F /* Resources */,
 				41295E991BF5224500374E3F /* Supporting Files */,
@@ -254,6 +263,8 @@
 		41295EE01BF52AA800374E3F /* Parsing */ = {
 			isa = PBXGroup;
 			children = (
+				41295F0B1BF5419400374E3F /* User+Parsing.h */,
+				41295F0C1BF5419400374E3F /* User+Parsing.m */,
 			);
 			name = Parsing;
 			sourceTree = "<group>";
@@ -315,11 +326,22 @@
 			name = "Parent Entity";
 			sourceTree = "<group>";
 		};
+		41295F0E1BF549C200374E3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41295ECC1BF524A700374E3F /* DataSources */,
+				41295EFD1BF53C2D00374E3F /* Managers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		7768BEDF5E9A9CE162D4C142 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DFFBF7A82D1B2F59367B311F /* Pods-JPPBabylonHealthTestTests.debug.xcconfig */,
 				D745B0C9BBF27A4E809CE3D9 /* Pods-JPPBabylonHealthTestTests.release.xcconfig */,
+				40B933DFC55877146BEB5029 /* Pods.debug.xcconfig */,
+				96735B57E7710DB3BAE810A3 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -328,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */,
+				510E50BEE650C828C53F1EAF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -339,9 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41295EBB1BF5224500374E3F /* Build configuration list for PBXNativeTarget "JPPBabylonHealthTest" */;
 			buildPhases = (
+				3FA26EBACE38F9038D94C4EA /* Check Pods Manifest.lock */,
 				41295E921BF5224500374E3F /* Sources */,
 				41295E931BF5224500374E3F /* Frameworks */,
 				41295E941BF5224500374E3F /* Resources */,
+				74D729B9C5760BC2BF0FED12 /* Embed Pods Frameworks */,
+				FCDBED75E379C0CE52C75E4A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -431,6 +457,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3FA26EBACE38F9038D94C4EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		535BA982104DA76369CC2790 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,7 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		54BBB101EFB6D872BB377ED9 /* Check Pods Manifest.lock */ = {
@@ -461,6 +502,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		74D729B9C5760BC2BF0FED12 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A71D89D8F766E2D00124A46F /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,7 +529,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDBED75E379C0CE52C75E4A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -485,6 +556,7 @@
 			files = (
 				41295EA71BF5224500374E3F /* JPPBabylonHealthTest.xcdatamodeld in Sources */,
 				41295EE51BF52C3D00374E3F /* User+Additions.m in Sources */,
+				41295F0D1BF5419400374E3F /* User+Parsing.m in Sources */,
 				41295EFC1BF5354500374E3F /* BHUserGateway.m in Sources */,
 				41295EE91BF52CE900374E3F /* BHCoreDataManager.m in Sources */,
 				41295EC61BF523FD00374E3F /* BHUsersListViewController.m in Sources */,
@@ -582,7 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -626,7 +698,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -636,8 +708,10 @@
 		};
 		41295EBC1BF5224500374E3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B933DFC55877146BEB5029 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JPPBabylonHealthTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicdealers.JPPBabylonHealthTest;
@@ -647,8 +721,10 @@
 		};
 		41295EBD1BF5224500374E3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96735B57E7710DB3BAE810A3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JPPBabylonHealthTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicdealers.JPPBabylonHealthTest;

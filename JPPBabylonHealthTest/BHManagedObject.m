@@ -22,9 +22,12 @@
     
     //JP: To be overriden in Subclass.
     
-    self.serverId = dictionary[@"_id"];
-    self.createdAt = dictionary[@"createdAt"];
-    self.updatedAt = dictionary[@"updatedAt"];
+    self.serverId = dictionary[@"id"];
+    
+    NSDateFormatter *dateFormatter = [BHManagedObject serverParsingDateFormatter];
+
+    self.createdAt = [dateFormatter dateFromString:dictionary[@"createdAt"]];
+    self.updatedAt = [dateFormatter dateFromString:dictionary[@"updatedAt"]];
 }
 
 
@@ -99,7 +102,6 @@
 
 
 + (NSString *)serverIdDictionaryKeyPath {
-    //JP: To be implemented in subclass.
     return @"id";
 }
 
@@ -113,5 +115,15 @@
     
     return fetchRequest;
 }
+
+
++ (NSDateFormatter *)serverParsingDateFormatter {
+    
+    NSDateFormatter *dateFormmater = [NSDateFormatter new];
+    [dateFormmater setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
+    
+    return dateFormmater;
+}
+
 
 @end

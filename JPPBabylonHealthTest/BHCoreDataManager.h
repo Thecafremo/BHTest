@@ -8,6 +8,9 @@
 
 #import <CoreData/CoreData.h>
 
+#import "NSManagedObject+Additions.h"
+#import "NSManagedObjectContext+Additions.h"
+
 @interface BHCoreDataManager : NSObject
 
 @property (nonatomic, strong) NSManagedObjectContext *backgroundContext;

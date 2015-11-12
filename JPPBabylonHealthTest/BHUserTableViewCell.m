@@ -12,6 +12,13 @@
 
 @implementation BHUserTableViewCell
 
+#pragma mark - LifeCycle's.
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    return [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
+}
+
+
 #pragma mark - Methods.
 
 - (void)populateWithUser:(User *)user {

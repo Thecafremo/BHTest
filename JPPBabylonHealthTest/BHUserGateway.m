@@ -7,7 +7,36 @@
 //
 
 #import "BHUserGateway.h"
+#import "BHRequestManager.h"
+#import "BHCoreDataManager.h"
+
+#import "User+Parsing.h"
+
+static NSString * const kRetrieveUsersAPIURL = @"http://fast-gorge.herokuapp.com/contacts";
 
 @implementation BHUserGateway
+
++ (void)retrieveRemoteUsersSavingInContext:(NSManagedObjectContext *)context withResponseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock {
+    
+    [BHRequestManager makeGETCallToURL:kRetrieveUsersAPIURL withParameters:nil responseCompletionBlock:^(NSError *error, NSArray *usersDictionariesArray) {
+       
+        if (error != nil) {
+            
+            if (responseCompletionBlock) responseCompletionBlock(error, nil);
+            return;
+        }
+        
+        
+        [context performBlock:^{
+            
+            NSArray *usersArray = [User updateLocalDataBaseWithDictionaries:usersDictionariesArray inContext:context];
+            
+            [context BH_saveWithCompletionBlock:^(NSError *error) {
+                if (responseCompletionBlock) responseCompletionBlock(error, usersArray);
+            }];
+        }];
+    }];
+}
+
 
 @end

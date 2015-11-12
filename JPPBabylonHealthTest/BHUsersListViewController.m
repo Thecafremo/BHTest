@@ -56,6 +56,8 @@
 
 - (void)configureTableView {
     
+    [self.tableView addSubview:self.refreshControl];
+    
     [self.tableView registerClass:[BHUserTableViewCell class] forCellReuseIdentifier:@"User"];
     
     NSFetchedResultsController *fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:[User fetchRequestForAllUsers] managedObjectContext:[BHCoreDataManager sharedInstance].defaultContext sectionNameKeyPath:nil cacheName:nil];
@@ -79,12 +81,6 @@
     }
     
     self.isRetrievingData = YES;
-    
-    
-    if (!self.refreshControl.isRefreshing) {
-        [self.refreshControl beginRefreshing];
-    }
-    
     
     [User retrieveRemoteUsersWithCompletionBlock:^(NSError *error) {
         
