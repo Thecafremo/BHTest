@@ -6,7 +6,6 @@
 //  Copyright © 2015 MagicDealers. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
 @interface BHCoreDataManager : NSObject
