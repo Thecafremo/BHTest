@@ -6,10 +6,9 @@
 //  Copyright © 2015 MagicDealers. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+#import "BHManagedObject.h"
 
-@interface User : NSManagedObject
+@interface User : BHManagedObject
 
 @property (nonatomic, retain) NSString *first_name;
 @property (nonatomic, retain) NSString *surname;
