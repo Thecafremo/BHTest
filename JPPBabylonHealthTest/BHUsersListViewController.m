@@ -10,11 +10,14 @@
 #import "BHUserTableViewCell.h"
 #import "BHTableViewDataSource.h"
 #import "BHCoreDataManager.h"
+#import "BHContactDetailsViewController.h"
 
 #import "User+Additions.h"
 #import "User+Actions.h"
 
-@interface BHUsersListViewController ()
+static NSString * const kContactDetailsSegueIdentifier = @"contactDetails";
+
+@interface BHUsersListViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
@@ -93,6 +96,28 @@
         
         self.isRetrievingData = NO;
     }];
+}
+
+
+#pragma mark - UITableViewDelegate's.
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    User *user = [self.tableViewDataSource itemForIndexPath:indexPath];
+    
+    [self performSegueWithIdentifier:kContactDetailsSegueIdentifier sender:user];
+}
+
+
+#pragma mark - UIStoryBoard's Navigation.
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:kContactDetailsSegueIdentifier]) {
+        
+        BHContactDetailsViewController *contactDetailsViewController = segue.destinationViewController;
+        [contactDetailsViewController populateWithUser:(User *)sender];
+    }
 }
 
 

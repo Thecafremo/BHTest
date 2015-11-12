@@ -28,6 +28,9 @@
 		41295F071BF53FC400374E3F /* BHManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F051BF53FC400374E3F /* BHManagedObject.m */; settings = {ASSET_TAGS = (); }; };
 		41295F0A1BF5407700374E3F /* NSManagedObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F091BF5407700374E3F /* NSManagedObject+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		41295F0D1BF5419400374E3F /* User+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F0C1BF5419400374E3F /* User+Parsing.m */; settings = {ASSET_TAGS = (); }; };
+		41295F111BF54FF200374E3F /* BHContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F101BF54FF200374E3F /* BHContactDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		41295F161BF5503500374E3F /* BHContactDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F151BF5503400374E3F /* BHContactDetail.m */; settings = {ASSET_TAGS = (); }; };
+		41295F1A1BF5522100374E3F /* NSDateFormatter+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295F191BF5522100374E3F /* NSDateFormatter+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		AF1450596E3E0C532B161FEC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 510E50BEE650C828C53F1EAF /* libPods.a */; };
 		C561135C4BECE738BF6E4987 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 510E50BEE650C828C53F1EAF /* libPods.a */; };
 		CD901DFC4DC6E88D8F16384D /* libPods-JPPBabylonHealthTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */; };
@@ -88,6 +91,12 @@
 		41295F091BF5407700374E3F /* NSManagedObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Additions.m"; sourceTree = "<group>"; };
 		41295F0B1BF5419400374E3F /* User+Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+Parsing.h"; sourceTree = "<group>"; };
 		41295F0C1BF5419400374E3F /* User+Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+Parsing.m"; sourceTree = "<group>"; };
+		41295F0F1BF54FF200374E3F /* BHContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactDetailsViewController.h; sourceTree = "<group>"; };
+		41295F101BF54FF200374E3F /* BHContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactDetailsViewController.m; sourceTree = "<group>"; };
+		41295F141BF5503400374E3F /* BHContactDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactDetail.h; sourceTree = "<group>"; };
+		41295F151BF5503400374E3F /* BHContactDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactDetail.m; sourceTree = "<group>"; };
+		41295F181BF5522100374E3F /* NSDateFormatter+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Additions.h"; sourceTree = "<group>"; };
+		41295F191BF5522100374E3F /* NSDateFormatter+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Additions.m"; sourceTree = "<group>"; };
 		510E50BEE650C828C53F1EAF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96735B57E7710DB3BAE810A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPPBabylonHealthTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +189,8 @@
 				41295EA21BF5224500374E3F /* Main.storyboard */,
 				41295EC41BF523FD00374E3F /* BHUsersListViewController.h */,
 				41295EC51BF523FD00374E3F /* BHUsersListViewController.m */,
+				41295F0F1BF54FF200374E3F /* BHContactDetailsViewController.h */,
+				41295F101BF54FF200374E3F /* BHContactDetailsViewController.m */,
 			);
 			name = "Main Journey";
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 		41295EE11BF52C1400374E3F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				41295F171BF551FA00374E3F /* NSDateFormatter */,
 				41295EE21BF52C1E00374E3F /* User */,
 			);
 			name = Categories;
@@ -302,8 +314,8 @@
 		41295EF91BF5353000374E3F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				41295EFA1BF5354500374E3F /* BHUserGateway.h */,
-				41295EFB1BF5354500374E3F /* BHUserGateway.m */,
+				41295F131BF5502400374E3F /* Objects */,
+				41295F121BF5501F00374E3F /* Gateways */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -333,6 +345,33 @@
 				41295EFD1BF53C2D00374E3F /* Managers */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		41295F121BF5501F00374E3F /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				41295EFA1BF5354500374E3F /* BHUserGateway.h */,
+				41295EFB1BF5354500374E3F /* BHUserGateway.m */,
+			);
+			name = Gateways;
+			sourceTree = "<group>";
+		};
+		41295F131BF5502400374E3F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				41295F141BF5503400374E3F /* BHContactDetail.h */,
+				41295F151BF5503400374E3F /* BHContactDetail.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		41295F171BF551FA00374E3F /* NSDateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				41295F181BF5522100374E3F /* NSDateFormatter+Additions.h */,
+				41295F191BF5522100374E3F /* NSDateFormatter+Additions.m */,
+			);
+			name = NSDateFormatter;
 			sourceTree = "<group>";
 		};
 		7768BEDF5E9A9CE162D4C142 /* Pods */ = {
@@ -561,7 +600,9 @@
 				41295EE91BF52CE900374E3F /* BHCoreDataManager.m in Sources */,
 				41295EC61BF523FD00374E3F /* BHUsersListViewController.m in Sources */,
 				41295F0A1BF5407700374E3F /* NSManagedObject+Additions.m in Sources */,
+				41295F1A1BF5522100374E3F /* NSDateFormatter+Additions.m in Sources */,
 				41295F001BF53C3C00374E3F /* BHRequestManager.m in Sources */,
+				41295F111BF54FF200374E3F /* BHContactDetailsViewController.m in Sources */,
 				41295EF81BF534D800374E3F /* User+Actions.m in Sources */,
 				41295EDF1BF52A6300374E3F /* User.m in Sources */,
 				41295EF51BF5326100374E3F /* NSManagedObjectContext+Additions.m in Sources */,
@@ -569,6 +610,7 @@
 				41295ED61BF5267900374E3F /* BHTableViewDataSource.m in Sources */,
 				41295ECA1BF5243600374E3F /* BHTableViewCell.m in Sources */,
 				41295E9E1BF5224500374E3F /* AppDelegate.m in Sources */,
+				41295F161BF5503500374E3F /* BHContactDetail.m in Sources */,
 				41295ED01BF525A500374E3F /* BHUserTableViewCell.m in Sources */,
 				41295E9B1BF5224500374E3F /* main.m in Sources */,
 			);

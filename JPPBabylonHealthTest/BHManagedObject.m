@@ -9,6 +9,7 @@
 #import "BHManagedObject.h"
 
 #import "NSManagedObject+Additions.h"
+#import "NSDateFormatter+Additions.h"
 
 @implementation BHManagedObject
 
@@ -24,7 +25,7 @@
     
     self.serverId = dictionary[@"id"];
     
-    NSDateFormatter *dateFormatter = [BHManagedObject serverParsingDateFormatter];
+    NSDateFormatter *dateFormatter = [NSDateFormatter BH_serverDatesDateFormatter];
 
     self.createdAt = [dateFormatter dateFromString:dictionary[@"createdAt"]];
     self.updatedAt = [dateFormatter dateFromString:dictionary[@"updatedAt"]];
@@ -114,15 +115,6 @@
     fetchRequest.predicate = [NSPredicate predicateWithFormat:@"serverId IN %@", parseIdsSet];
     
     return fetchRequest;
-}
-
-
-+ (NSDateFormatter *)serverParsingDateFormatter {
-    
-    NSDateFormatter *dateFormmater = [NSDateFormatter new];
-    [dateFormmater setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
-    
-    return dateFormmater;
 }
 
 
