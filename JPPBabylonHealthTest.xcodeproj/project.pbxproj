@@ -85,13 +85,9 @@
 			children = (
 				41295E9C1BF5224500374E3F /* AppDelegate.h */,
 				41295E9D1BF5224500374E3F /* AppDelegate.m */,
-				41295E9F1BF5224500374E3F /* ViewController.h */,
-				41295EA01BF5224500374E3F /* ViewController.m */,
-				41295EA21BF5224500374E3F /* Main.storyboard */,
-				41295EA81BF5224500374E3F /* Assets.xcassets */,
-				41295EAA1BF5224500374E3F /* LaunchScreen.storyboard */,
-				41295EAD1BF5224500374E3F /* Info.plist */,
-				41295EA51BF5224500374E3F /* JPPBabylonHealthTest.xcdatamodeld */,
+				41295EC21BF522D700374E3F /* Core Data */,
+				41295EC11BF522C000374E3F /* Main Journey */,
+				41295EC31BF522DF00374E3F /* Resources */,
 				41295E991BF5224500374E3F /* Supporting Files */,
 			);
 			path = JPPBabylonHealthTest;
@@ -100,6 +96,8 @@
 		41295E991BF5224500374E3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41295EAA1BF5224500374E3F /* LaunchScreen.storyboard */,
+				41295EAD1BF5224500374E3F /* Info.plist */,
 				41295E9A1BF5224500374E3F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -112,6 +110,32 @@
 				41295EB81BF5224500374E3F /* Info.plist */,
 			);
 			path = JPPBabylonHealthTestTests;
+			sourceTree = "<group>";
+		};
+		41295EC11BF522C000374E3F /* Main Journey */ = {
+			isa = PBXGroup;
+			children = (
+				41295E9F1BF5224500374E3F /* ViewController.h */,
+				41295EA01BF5224500374E3F /* ViewController.m */,
+				41295EA21BF5224500374E3F /* Main.storyboard */,
+			);
+			name = "Main Journey";
+			sourceTree = "<group>";
+		};
+		41295EC21BF522D700374E3F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				41295EA51BF5224500374E3F /* JPPBabylonHealthTest.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		41295EC31BF522DF00374E3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41295EA81BF5224500374E3F /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
