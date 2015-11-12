@@ -24,6 +24,7 @@
 		41295EF51BF5326100374E3F /* NSManagedObjectContext+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EF41BF5326100374E3F /* NSManagedObjectContext+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		41295EF81BF534D800374E3F /* User+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EF71BF534D800374E3F /* User+Actions.m */; settings = {ASSET_TAGS = (); }; };
 		41295EFC1BF5354500374E3F /* BHUserGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 41295EFB1BF5354500374E3F /* BHUserGateway.m */; settings = {ASSET_TAGS = (); }; };
+		CD901DFC4DC6E88D8F16384D /* libPods-JPPBabylonHealthTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,9 @@
 		41295EF71BF534D800374E3F /* User+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+Actions.m"; sourceTree = "<group>"; };
 		41295EFA1BF5354500374E3F /* BHUserGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHUserGateway.h; sourceTree = "<group>"; };
 		41295EFB1BF5354500374E3F /* BHUserGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHUserGateway.m; sourceTree = "<group>"; };
+		9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPPBabylonHealthTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D745B0C9BBF27A4E809CE3D9 /* Pods-JPPBabylonHealthTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPPBabylonHealthTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		DFFBF7A82D1B2F59367B311F /* Pods-JPPBabylonHealthTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPPBabylonHealthTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD901DFC4DC6E88D8F16384D /* libPods-JPPBabylonHealthTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,8 @@
 				41295E981BF5224500374E3F /* JPPBabylonHealthTest */,
 				41295EB51BF5224500374E3F /* JPPBabylonHealthTestTests */,
 				41295E971BF5224500374E3F /* Products */,
+				7768BEDF5E9A9CE162D4C142 /* Pods */,
+				D62ACCD91771A68E96165E46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +284,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		7768BEDF5E9A9CE162D4C142 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBF7A82D1B2F59367B311F /* Pods-JPPBabylonHealthTestTests.debug.xcconfig */,
+				D745B0C9BBF27A4E809CE3D9 /* Pods-JPPBabylonHealthTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D62ACCD91771A68E96165E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D8F8BEE21BAE2E3D35FAC4F /* libPods-JPPBabylonHealthTestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,9 +325,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41295EBE1BF5224500374E3F /* Build configuration list for PBXNativeTarget "JPPBabylonHealthTestTests" */;
 			buildPhases = (
+				54BBB101EFB6D872BB377ED9 /* Check Pods Manifest.lock */,
 				41295EAE1BF5224500374E3F /* Sources */,
 				41295EAF1BF5224500374E3F /* Frameworks */,
 				41295EB01BF5224500374E3F /* Resources */,
+				A71D89D8F766E2D00124A46F /* Embed Pods Frameworks */,
+				535BA982104DA76369CC2790 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,6 +398,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		535BA982104DA76369CC2790 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54BBB101EFB6D872BB377ED9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A71D89D8F766E2D00124A46F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPPBabylonHealthTestTests/Pods-JPPBabylonHealthTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41295E921BF5224500374E3F /* Sources */ = {
@@ -539,6 +614,7 @@
 		};
 		41295EBF1BF5224500374E3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFFBF7A82D1B2F59367B311F /* Pods-JPPBabylonHealthTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JPPBabylonHealthTestTests/Info.plist;
@@ -551,6 +627,7 @@
 		};
 		41295EC01BF5224500374E3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D745B0C9BBF27A4E809CE3D9 /* Pods-JPPBabylonHealthTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JPPBabylonHealthTestTests/Info.plist;
@@ -580,6 +657,7 @@
 				41295EBD1BF5224500374E3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41295EBE1BF5224500374E3F /* Build configuration list for PBXNativeTarget "JPPBabylonHealthTestTests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +666,7 @@
 				41295EC01BF5224500374E3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
