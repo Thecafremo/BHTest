@@ -10,7 +10,7 @@
 
 @interface User (Actions)
 
-- (void)retrieveAvatarImageWithCompletionBlock:(CompletionBlock)completionBlock;
+- (void)retrieveAvatarImageWithResponseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock;
 + (void)retrieveRemoteUsersWithCompletionBlock:(CompletionBlock)completionBlock;
 
 @end

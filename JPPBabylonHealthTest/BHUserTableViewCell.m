@@ -26,8 +26,8 @@
 - (void)populateWithUser:(User *)user {
     
     WeakSelf;
-    [user retrieveAvatarImageWithCompletionBlock:^(NSError *error) {
-        weakSelf.imageView.image = user.avatarImage;
+    [user retrieveAvatarImageWithResponseCompletionBlock:^(NSError *error, UIImage *image) {
+        weakSelf.imageView.image = image;
     }];
     
     self.textLabel.text = user.first_name;

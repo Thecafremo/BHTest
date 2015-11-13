@@ -13,11 +13,11 @@
 
 @implementation User (Actions)
 
-- (void)retrieveAvatarImageWithCompletionBlock:(CompletionBlock)completionBlock {
+- (void)retrieveAvatarImageWithResponseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock {
     
     if (self.avatarImage) {
         
-        if (completionBlock) completionBlock(nil);
+        if (responseCompletionBlock) responseCompletionBlock(nil, self.avatarImage);
         return;
     }
     
@@ -27,7 +27,7 @@
         self.avatarImage = image;
         self.updatedAt = [NSDate date];
         
-        if (completionBlock) completionBlock(error);        
+        if (responseCompletionBlock) responseCompletionBlock(nil, image);
     }];
 }
 

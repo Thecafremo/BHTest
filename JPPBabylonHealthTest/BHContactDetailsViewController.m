@@ -77,8 +77,8 @@ static NSString * const kDetailCellIdentifier = @"detailCell";
 - (void)configureViewController {
     
     WeakSelf;
-    [self.user retrieveAvatarImageWithCompletionBlock:^(NSError *error) {
-        weakSelf.imageView.image = weakSelf.user.avatarImage;
+    [self.user retrieveAvatarImageWithResponseCompletionBlock:^(NSError *error, UIImage *image) {
+        weakSelf.imageView.image = image;
     }];
 }
 
