@@ -18,4 +18,6 @@
 @property (nonatomic, retain) NSDate *createdAt;
 @property (nonatomic, retain) NSDate *updatedAt;
 
+@property (nonatomic, strong) UIImage *avatarImage;
+
 @end

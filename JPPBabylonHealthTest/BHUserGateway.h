@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class User;
+
 @interface BHUserGateway : NSObject
 
 + (void)retrieveRemoteUsersSavingInContext:(NSManagedObjectContext *)context withResponseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock;
+
++ (void)retrieveAvatarImageForUser:(User *)user withResponseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock;
 
 @end

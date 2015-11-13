@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" id="ThR-sb-jcl"/>
                     <connections>
                         <outlet property="tableView" destination="3A7-YS-Xe5" id="Edz-k5-U4F"/>
-                        <segue destination="pss-Jr-HY4" kind="showDetail" identifier="contactDetails" id="dOC-dJ-7mf"/>
+                        <segue destination="pss-Jr-HY4" kind="show" identifier="contactDetails" id="dOC-dJ-7mf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ke8-rP-w9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="9Gi-OH-7AJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    <rect key="frame" x="0.0" y="64" width="375" height="150"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ykh-w3-Bdf">
@@ -122,7 +122,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.12549020350000001" green="0.6784313917" blue="0.94117653369999998" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="ykh-w3-Bdf" secondAttribute="centerY" id="LzP-3e-iUS"/>
                                         <constraint firstAttribute="centerX" secondItem="ykh-w3-Bdf" secondAttribute="centerX" id="xBJ-tK-dDj"/>
@@ -130,7 +130,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailCell" textLabel="aSV-SR-Vqb" detailTextLabel="Ubv-9l-tOk" rowHeight="50" style="IBUITableViewCellStyleValue2" id="cPd-db-Q58">
-                                        <rect key="frame" x="0.0" y="172" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="236" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cPd-db-Q58" id="3PE-4p-fRF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>

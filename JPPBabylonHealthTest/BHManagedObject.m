@@ -70,14 +70,14 @@
     
     [dictionariesArray enumerateObjectsUsingBlock:^(NSDictionary *dictionary, NSUInteger index, BOOL *stop) {
         
-        NSString *serverId = [dictionary valueForKeyPath:[self.class serverIdDictionaryKeyPath]];
+        NSNumber *serverId = [dictionary valueForKeyPath:[self.class serverIdDictionaryKeyPath]];
         
         __block BHManagedObject *managedObject;
         __block BOOL matchFound = NO;
         
         [fetchedObjectsArray enumerateObjectsUsingBlock:^(BHManagedObject *localManagedObject, NSUInteger idx, BOOL *stop) {
             
-            if ([localManagedObject.serverId isEqualToString:serverId]) {
+            if ([localManagedObject.serverId isEqual:serverId]) {
                 
                 managedObject = localManagedObject;
                 

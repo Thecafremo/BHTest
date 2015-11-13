@@ -13,6 +13,7 @@
 #import "User+Parsing.h"
 
 static NSString * const kRetrieveUsersAPIURL = @"http://fast-gorge.herokuapp.com/contacts";
+static NSString * const kRetrieveAvatarURL = @"http://api.adorable.io/avatars/285/%@.png";
 
 @implementation BHUserGateway
 
@@ -35,6 +36,16 @@ static NSString * const kRetrieveUsersAPIURL = @"http://fast-gorge.herokuapp.com
                 if (responseCompletionBlock) responseCompletionBlock(error, usersArray);
             }];
         }];
+    }];
+}
+
+
++ (void)retrieveAvatarImageForUser:(User *)user withResponseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock {
+   
+    NSString *URLString = [NSString stringWithFormat:kRetrieveAvatarURL, user.email];
+    
+    [BHRequestManager retrieveImageForURL:URLString withResponseCompletionBlock:^(NSError *error, UIImage *image) {
+        if (responseCompletionBlock) responseCompletionBlock(error, image);
     }];
 }
 

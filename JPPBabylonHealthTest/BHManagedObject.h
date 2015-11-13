@@ -10,7 +10,7 @@
 
 @interface BHManagedObject : NSManagedObject
 
-@property (nonatomic, retain) NSString *serverId;
+@property (nonatomic, retain) NSNumber *serverId;
 @property (nonatomic, retain) NSDate *createdAt;
 @property (nonatomic, retain) NSDate *updatedAt;
 

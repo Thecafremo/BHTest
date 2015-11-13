@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class User;
+
 @interface BHRequestManager : NSObject
 
 + (void)makeGETCallToURL:(NSString *)URL withParameters:(NSDictionary *)parametersDictionary responseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock;
+
++ (void)retrieveImageForURL:(NSString *)URL withResponseCompletionBlock:(ResponseCompletionBlock)responseCompletionBlock;
 
 @end

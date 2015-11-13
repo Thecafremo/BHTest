@@ -152,7 +152,6 @@
 				41295E9D1BF5224500374E3F /* AppDelegate.m */,
 				41295EC21BF522D700374E3F /* Core Data */,
 				41295EE11BF52C1400374E3F /* Categories */,
-				41295EF91BF5353000374E3F /* Model */,
 				41295EC71BF5240E00374E3F /* Views */,
 				41295F0E1BF549C200374E3F /* Controllers */,
 				41295EC11BF522C000374E3F /* Main Journey */,
@@ -186,6 +185,7 @@
 		41295EC11BF522C000374E3F /* Main Journey */ = {
 			isa = PBXGroup;
 			children = (
+				41295EF91BF5353000374E3F /* Model */,
 				41295EA21BF5224500374E3F /* Main.storyboard */,
 				41295EC41BF523FD00374E3F /* BHUsersListViewController.h */,
 				41295EC51BF523FD00374E3F /* BHUsersListViewController.m */,

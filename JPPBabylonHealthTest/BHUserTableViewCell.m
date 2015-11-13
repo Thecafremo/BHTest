@@ -8,7 +8,9 @@
 
 #import "BHUserTableViewCell.h"
 
-#import "User.h"
+#import "User+Actions.h"
+
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @implementation BHUserTableViewCell
 
@@ -22,6 +24,11 @@
 #pragma mark - Methods.
 
 - (void)populateWithUser:(User *)user {
+    
+    WeakSelf;
+    [user retrieveAvatarImageWithCompletionBlock:^(NSError *error) {
+        weakSelf.imageView.image = user.avatarImage;
+    }];
     
     self.textLabel.text = user.first_name;
     self.detailTextLabel.text = user.surname;

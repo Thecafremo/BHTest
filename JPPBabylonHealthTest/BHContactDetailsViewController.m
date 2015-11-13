@@ -10,11 +10,13 @@
 #import "BHTableViewDataSource.h"
 #import "BHContactDetail.h"
 
-#import "User.h"
+#import "User+Actions.h"
 
 static NSString * const kDetailCellIdentifier = @"detailCell";
 
 @interface BHContactDetailsViewController ()
+
+@property (nonatomic, strong) User *user;
 
 @property (nonatomic, strong) NSArray *contactDetailsArray;
 
@@ -31,14 +33,29 @@ static NSString * const kDetailCellIdentifier = @"detailCell";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
     [self configureTableView];
+    [self configureViewController];
+}
+
+
+#pragma mark - Setters & Getters.
+
+- (NSArray *)contactDetailsArray {
+    
+    if (!_contactDetailsArray) {
+        _contactDetailsArray = [BHContactDetail contactDetailsForUser:self.user];
+    }
+    
+    
+    return _contactDetailsArray;
 }
 
 
 #pragma mark - Methods.
 
 - (void)populateWithUser:(User *)user {
-    self.contactDetailsArray = [BHContactDetail contactDetailsForUser:user];
+    self.user = user;
 }
 
 
@@ -54,6 +71,15 @@ static NSString * const kDetailCellIdentifier = @"detailCell";
     };
     
     self.tableView.dataSource = self.tableViewDataSource;
+}
+
+
+- (void)configureViewController {
+    
+    WeakSelf;
+    [self.user retrieveAvatarImageWithCompletionBlock:^(NSError *error) {
+        weakSelf.imageView.image = weakSelf.user.avatarImage;
+    }];
 }
 
 

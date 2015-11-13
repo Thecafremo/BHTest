@@ -87,14 +87,15 @@ static NSString * const kContactDetailsSegueIdentifier = @"contactDetails";
     
     [User retrieveRemoteUsersWithCompletionBlock:^(NSError *error) {
         
+        self.isRetrievingData = NO;
+        [self.refreshControl endRefreshing];
+        
         if (error != nil) {
             
             [[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
             
             return;
         }
-        
-        self.isRetrievingData = NO;
     }];
 }
 
@@ -106,6 +107,8 @@ static NSString * const kContactDetailsSegueIdentifier = @"contactDetails";
     User *user = [self.tableViewDataSource itemForIndexPath:indexPath];
     
     [self performSegueWithIdentifier:kContactDetailsSegueIdentifier sender:user];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 

@@ -13,6 +13,25 @@
 
 @implementation User (Actions)
 
+- (void)retrieveAvatarImageWithCompletionBlock:(CompletionBlock)completionBlock {
+    
+    if (self.avatarImage) {
+        
+        if (completionBlock) completionBlock(nil);
+        return;
+    }
+    
+    
+    [BHUserGateway retrieveAvatarImageForUser:self withResponseCompletionBlock:^(NSError *error, UIImage *image) {
+        
+        self.avatarImage = image;
+        self.updatedAt = [NSDate date];
+        
+        if (completionBlock) completionBlock(error);        
+    }];
+}
+
+
 + (void)retrieveRemoteUsersWithCompletionBlock:(CompletionBlock)completionBlock {
     
     [BHUserGateway retrieveRemoteUsersSavingInContext:[BHCoreDataManager sharedInstance].backgroundContext withResponseCompletionBlock:^(NSError *error, id responseObject) {

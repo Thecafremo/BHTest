@@ -18,4 +18,6 @@
 @dynamic createdAt;
 @dynamic updatedAt;
 
+@synthesize avatarImage;
+
 @end
