@@ -42,7 +42,7 @@
     
     
 
-    NSDateFormatter *dateFormatter = [NSDateFormatter BH_serverDatesDateFormatter];
+    NSDateFormatter *dateFormatter = [NSDateFormatter BH_dateFormatter];
     
     if (user.createdAt) {
         [contactDetailsArray addObject:[BHContactDetail contactDetailWithTitle:NSLocalizedString(@"Created at", nil)

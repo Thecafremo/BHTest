@@ -22,7 +22,7 @@
 + (NSDateFormatter *)BH_dateFormatter {
     
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    [dateFormatter setDateFormat:@"dd - MM - yy"];
+    [dateFormatter setDateFormat:@"dd/MM/yy"];
     
     return dateFormatter;
 }
